@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    margin-bottom: .8rem;
+    width: 80%;
+    max-width: 30rem;
+}
+
+small {
+    font-size: 1.6 rem;
+    color: #800;
+}
+
+small span {
+    font-weight: 500;
+}
+    
+h1 {
+    color: #490;
+    margin-top: 1rem 0;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+
+p {
+    color: hsla(0, 0%, 0%, .6);
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+select {
+    appearance: none;
+    color: hsla(0, 0%, 0%, .1);
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border: 1px solid hsla(0, 0%, 0%, .1);
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.currency {
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swap-rate-container {
+    width: 100%;
+    max-width: 27rem;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 70%;
+    text-align: right;
+    outline: none;
+    border-radius: .5rem;
+    appearance: none;
+    font-size: 2rem;
+    padding-right: .9rem;
+}
+
+input:in-range {
+    border: 2px solid green;
+}
+
+input:out-of-range {
+    border: 2px solid red;
+}
+
+.swap-rate-container .rate {
+    font-size: 1.4rem;
+}
+
+/* .swap-rate-container svg { */
+    /* transition: .6s; */
+    /* cursor: pointer; */
+/* } */
+
+/* #swap-rate-container svg.active { */
+    /* transform: rotate(180deg); */
+/* } */
+
+#swap {
+    transition: .5s;
+    cursor: pointer;
+}
+
+#swap.active {
+    transform: rotate(180deg);
+}
